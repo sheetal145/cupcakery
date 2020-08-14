@@ -387,7 +387,7 @@ html, body {
   width: 90%;
   max-width: 1170px;
   left: 50%;
-  top: 50%;
+  top: 55%;
   bottom: auto;
   right: auto;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -397,9 +397,9 @@ html, body {
   transform: translateX(-50%) translateY(-50%);
   color: white;
   font-family: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 40px;
+  font-size: 3rem !important;
+  font-weight: bolder;
   text-align: center;
 }
 @media only screen and (min-width: 768px) {
