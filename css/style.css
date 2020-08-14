@@ -384,7 +384,7 @@ html, body {
 }
 .cd-intro h1 {
   position: absolute;
-  width: 90%;
+  width: 100%;
   max-width: 1170px;
   left: 50%;
   top: 55%;
@@ -396,12 +396,15 @@ html, body {
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   color: white;
-  font-family: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 40px;
-  font-size: 3rem !important;
+  font-size: 3em !important;
   font-weight: bolder;
   text-align: center;
+  font-family: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif;
 }
+/*.hdn{
+  background-color: rgba(255, 255, 255, 0.4);
+}*/
 @media only screen and (min-width: 768px) {
   .cd-intro h1 {
     font-size: 30px;
