@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
@@ -18,7 +19,7 @@
 
 		<nav>
 			<ul class="cd-secondary-nav">
-				<li><a href="" data-toggle="modal" data-target="#modalLRForm">Log In | Register</a></li>
+				<li><a href="" data-toggle="modal" data-target="#modalLRForm">Sign Up</a></li>
 			</ul>
 		</nav> <!-- cd-nav -->
 
@@ -60,14 +61,14 @@
 	</main>
 	<!--Modal: Login / Register Form-->
 <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog cascading-modal" role="document">
-      <!--Content-->
+   <!-- <div class="modal-dialog cascading-modal" role="document">
+      <!-Content--
       <div class="modal-content">
   
-        <!--Modal cascading tabs-->
+        <!-Modal cascading tabs--
         <div class="modal-c-tabs">
   
-          <!-- Nav tabs -->
+          <!-- Nav tabs --
           <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
             <li class="nav-item">
               <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
@@ -79,12 +80,12 @@
             </li>
           </ul>
   
-          <!-- Tab panels -->
+          <!-- Tab panels ->
           <div class="tab-content">
-            <!--Panel 7-->
+            <!--Panel 7--
             <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
   
-              <!--Body-->
+              <!--Body--
               <div class="modal-body mb-1">
                 <div class="md-form form-sm mb-5">
                   <i class="fas fa-envelope prefix"></i>
@@ -101,7 +102,7 @@
                   <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
                 </div>
               </div>
-              <!--Footer-->
+              <!--Footer--
               <div class="modal-footer">
                 <div class="options text-center text-md-right mt-1">
                   <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
@@ -113,8 +114,48 @@
             </div>
             <!--/.Panel 7-->
   
-            <!--Panel 8-->
-            <div class="tab-pane fade" id="panel8" role="tabpanel">
+            <!--Panel 8--
+            <div class="tab-pane fade" id="panel8" role="tabpanel">-->
+	<div class="signup-form">	
+  <form action="/examples/actions/confirmation.php" method="post">
+  <h2>Create Account</h2>
+  <p class="lead" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">It's free and hardly takes more than 30 seconds.</p>
+      <div class="form-group">
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-user"></i></span>
+      <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+    </div>
+      </div>
+      <div class="form-group">
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+      <input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
+    </div>
+      </div>
+  <div class="form-group">
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+      <input type="text" class="form-control" name="password" placeholder="Password" required="required">
+    </div>
+      </div>
+  <div class="form-group">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <i class="fa fa-lock"></i>
+        <i class="fa fa-check"></i>
+      </span>
+      <input type="text" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+    </div>
+      </div>        
+  <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Sign Up</button>
+      </div>
+  <p class="small text-center">By clicking the Sign Up button, you agree to our <br><a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy Policy</a>.</p>
+  <div class="text-center">Already have an account? <a href="#">Login here</a>.</div>
+
+</form>
+
+</div>
   
               <!--Body-->
               <div class="modal-body">
