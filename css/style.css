@@ -312,10 +312,13 @@ html, body {
   transition: background 0.2s;
 }
 .no-touch .cd-primary-nav a:hover {
-  background-color: #e36767;
+  background-color: #942222;
+  text-decoration: none;
+  color: #ffffff;
 }
 .cd-primary-nav .cd-label {
-  color: #35070b;
+  color: #e9b525;
+  text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
