@@ -302,6 +302,7 @@ html, body {
 .cd-primary-nav a {
   display: inline-block;
   padding: .4em 1em;
+  text-decoration:none;
   border-radius: 0.25em;
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
@@ -309,6 +310,8 @@ html, body {
 }
 .no-touch .cd-primary-nav a:hover {
   background-color: #e36767;
+  text-decoration: none;
+  color: #ffffff;
 }
 .cd-primary-nav .cd-label {
   color: #35070b;
