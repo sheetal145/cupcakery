@@ -155,7 +155,7 @@ h1{
   content: '';
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: absolute;  
   background-color: white;
   right: 0;
   -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
@@ -255,21 +255,27 @@ h1{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: .2em 0;
+  color:#ffffff;
+  text-decoration: none;
   text-transform: capitalize;
 }
 .cd-primary-nav a {
   display: inline-block;
   padding: .4em 1em;
   border-radius: 0.25em;
+  color:#ffffff;
+  text-decoration: none;
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
   transition: background 0.2s;
 }
 .no-touch .cd-primary-nav a:hover {
-  background-color: #691e1e;
+  background-color: #942222;
+  text-decoration: none;
+  color: #ffffff;
 }
 .cd-primary-nav .cd-label {
-  color: #35070b;
+  color: #e9b525;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
