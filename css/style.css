@@ -226,6 +226,7 @@ html, body {
   display: inline-block;
   padding: .4em 1em;
   border-radius: 0.25em;
+  
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
   transition: background 0.2s;
@@ -332,8 +333,6 @@ html, body {
     font-size: 20px;
     font-size: 1.25rem;
   }
-}
-@media only screen and (min-width: 1170px) {
   .cd-intro {
     height: 700px;
   }
@@ -342,9 +341,7 @@ html, body {
   text-decoration: none;
   color: #ffffff;
 }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-primary-nav li {
+ .cd-primary-nav li {
     font-size: 30px;
     font-size: 1.875rem;
   }
@@ -352,9 +349,7 @@ html, body {
     font-size: 16px;
     font-size: 1rem;
   }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-header {
+.cd-header {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
@@ -402,19 +397,13 @@ html, body {
     background: transparent;
     box-shadow: none;
   }
-}
-@media only screen and (min-width: 768px) {
   .cd-intro h1 {
     font-size: 30px;
     font-size: 1.875rem;
   }
-}
-@media only screen and (min-width: 768px) {
   .cd-primary-nav {
     padding: 80px 0;
   }
-}
-@media only screen and (min-width: 768px) {
   .cd-primary-nav-trigger {
     width: 100px;
     padding-left: 1em;
@@ -442,40 +431,13 @@ html, body {
     -o-transform: translateX(0) translateY(-50%);
     transform: translateX(0) translateY(-50%);
   }
-}
-@media only screen and (min-width: 768px) {
   .cd-secondary-nav {
     display: block;
   }
-}
-@media only screen and (min-width: 768px) {
   .cd-logo {
     left: 2.6em;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
