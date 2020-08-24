@@ -306,7 +306,7 @@ html, body {
   font-size: 3em !important;
   font-weight: bolder;
   text-align: center;
-  font-family: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 .hdn{
   background-color: rgba(0, 0, 0, 0.3);
@@ -334,6 +334,15 @@ html, body {
     font-size: 20px;
     font-size: 1.25rem;
   }
+ .cd intro h1{
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  text-align: center;
+  font-family: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif !important;}
   .txxx{
     font-family: 'Segoe Script', Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -415,7 +424,17 @@ html, body {
   .cd-intro h1 {
     font-size: 30px;
     font-size: 1.875rem;
-  }
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  text-align: center;
+  font-family: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif !important;
+
+ }
+ 
 }
 @media only screen and (min-width: 768px) {
   .cd-primary-nav {
