@@ -304,7 +304,6 @@ html, body {
   color: white;
   font-size: 40px;
   font-size: 3em !important;
-  font-weight: bolder;
   text-align: center;
   font-family: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif !important;
 }
@@ -417,7 +416,7 @@ html, body {
     box-shadow: none;
   }
   .txxx{
-    font-family: 'Segoe Script', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe Script', Tahoma, Geneva, Verdana, sans-serif !important;
   }
 }
 @media only screen and (min-width: 768px) {
