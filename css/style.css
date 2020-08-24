@@ -422,6 +422,11 @@ html, body {
   .cd-primary-nav-trigger .cd-menu-text {
     display: inline-block;
   }
+ .no-touch .cd-primary-nav a:hover {
+  background-color: #942222 !important;
+  text-decoration: none;
+  color: #ffffff;
+}
   .cd-primary-nav-trigger .cd-menu-icon {
     left: auto;
     right: 1em;
@@ -529,4 +534,9 @@ html, body {
   top: 19px;
   font-size: 9px;
   position: absolute;
+}
+.no-touch .cd-primary-nav a:hover {
+  background-color: #942222 !important;
+  text-decoration: none;
+  color: #ffffff;
 }
