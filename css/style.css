@@ -59,7 +59,6 @@ Main components
 html, body {
   height: 100%;
 }
-
 .cd-header {
   position: absolute;
   top: 0;
@@ -72,50 +71,6 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media only screen and (min-width: 768px) {
-  .cd-header {
-    height: 80px;
-    background: transparent;
-    box-shadow: none;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-header {
-    -webkit-transition: background-color 0.3s;
-    -moz-transition: background-color 0.3s;
-    transition: background-color 0.3s;
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .cd-header.is-fixed {
-    /* when the user scrolls down, we hide the header right above the viewport */
-    position: fixed;
-    top: -80px;
-    background-color: #4e0310f5;
-    -webkit-transition: -webkit-transform 0.3s;
-    -moz-transition: -moz-transform 0.3s;
-    transition: transform 0.3s;
-  }
-  .cd-header.is-visible {
-    /* if the user changes the scrolling direction, we show the header */
-    -webkit-transform: translate3d(0, 100%, 0);
-    -moz-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-  .cd-header.menu-is-open {
-    /* add a background color to the header when the navigation is open */
-    background-color: #420a0af5;
-  }
-}
-
 .cd-logo {
   display: block;
   position: absolute;
@@ -131,12 +86,6 @@ html, body {
 .cd-logo img {
   display: block;
 }
-@media only screen and (min-width: 768px) {
-  .cd-logo {
-    left: 2.6em;
-  }
-}
-
 .cd-secondary-nav {
   position: absolute;
   top: 50%;
@@ -161,12 +110,6 @@ html, body {
   text-transform: uppercase;
   font-weight: 700;
 }
-@media only screen and (min-width: 768px) {
-  .cd-secondary-nav {
-    display: block;
-  }
-}
-
 .cd-primary-nav-trigger {
   position: absolute;
   right: 0;
@@ -242,36 +185,6 @@ html, body {
   -o-transform: rotate(225deg);
   transform: rotate(225deg);
 }
-@media only screen and (min-width: 768px) {
-  .cd-primary-nav-trigger {
-    width: 100px;
-    padding-left: 1em;
-    background-color: transparent;
-    height: 30px;
-    line-height: 30px;
-    right: 2.2em;
-    top: 50%;
-    bottom: auto;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  .cd-primary-nav-trigger .cd-menu-text {
-    display: inline-block;
-  }
-  .cd-primary-nav-trigger .cd-menu-icon {
-    left: auto;
-    right: 1em;
-    -webkit-transform: translateX(0) translateY(-50%);
-    -moz-transform: translateX(0) translateY(-50%);
-    -ms-transform: translateX(0) translateY(-50%);
-    -o-transform: translateX(0) translateY(-50%);
-    transform: translateX(0) translateY(-50%);
-  }
-}
-
 .cd-primary-nav {
   /* by default it's hidden - on top of the viewport */
   position: fixed;
@@ -365,22 +278,6 @@ html, body {
   -o-transform: translateY(0);
   transform: translateY(0);
 }
-@media only screen and (min-width: 768px) {
-  .cd-primary-nav {
-    padding: 80px 0;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-primary-nav li {
-    font-size: 30px;
-    font-size: 1.875rem;
-  }
-  .cd-primary-nav .cd-label {
-    font-size: 16px;
-    font-size: 1rem;
-  }
-}
-
 .cd-intro {
   position: relative;
   height: 100% !important;
@@ -415,18 +312,6 @@ html, body {
   background-color: rgba(0, 0, 0, 0.3);
 
 }
-@media only screen and (min-width: 768px) {
-  .cd-intro h1 {
-    font-size: 30px;
-    font-size: 1.875rem;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-intro {
-    height: 700px;
-  }
-}
-
 .cd-main-content {
   position: relative;
   z-index: 1;
@@ -435,12 +320,166 @@ html, body {
   line-height: 1.3;
   margin: 1.7em 0;
 }
+
+
+
+
+
+
+
 @media only screen and (min-width: 1170px) {
   .cd-main-content p {
     font-size: 20px;
     font-size: 1.25rem;
   }
 }
+@media only screen and (min-width: 1170px) {
+  .cd-intro {
+    height: 700px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-primary-nav li {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+  .cd-primary-nav .cd-label {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-header {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .cd-header.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -80px;
+    background-color: #4e0310f5;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+  .cd-header.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  .cd-header.menu-is-open {
+    /* add a background color to the header when the navigation is open */
+    background-color: #420a0af5;
+  }
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+  .cd-header {
+    height: 80px;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cd-intro h1 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cd-primary-nav {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cd-primary-nav-trigger {
+    width: 100px;
+    padding-left: 1em;
+    background-color: transparent;
+    height: 30px;
+    line-height: 30px;
+    right: 2.2em;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .cd-primary-nav-trigger .cd-menu-text {
+    display: inline-block;
+  }
+  .cd-primary-nav-trigger .cd-menu-icon {
+    left: auto;
+    right: 1em;
+    -webkit-transform: translateX(0) translateY(-50%);
+    -moz-transform: translateX(0) translateY(-50%);
+    -ms-transform: translateX(0) translateY(-50%);
+    -o-transform: translateX(0) translateY(-50%);
+    transform: translateX(0) translateY(-50%);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cd-secondary-nav {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cd-logo {
+    left: 2.6em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .form-control, .form-control:focus, .input-group-addon {
   border-color: #e1e1e1;
