@@ -1,7 +1,7 @@
 /* -------------------------------- 
 
 Primary style
-
+ 
 
 -------------------------------- */
 html, body{
@@ -22,6 +22,11 @@ body {
 body.overflow-hidden {
   /* when primary navigation is visible, the content in the background won't scroll */
   overflow: hidden;
+}
+.no-touch .cd-primary-nav a:hover {
+  background-color: #942222 !important;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 a {
@@ -59,11 +64,11 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  background: #4d0710f2;
+  background: transparent;
   height: 50px;
   width: 100%;
   z-index: 3;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -152,6 +157,7 @@ html, body {
 .cd-secondary-nav a {
   display: inline-block;
   color: white;
+  text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -312,7 +318,7 @@ html, body {
   transition: background 0.2s;
 }
 .no-touch .cd-primary-nav a:hover {
-  background-color: #942222;
+  background-color: #942222 !important;
   text-decoration: none;
   color: #ffffff;
 }
@@ -405,9 +411,10 @@ html, body {
   text-align: center;
   font-family: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif;
 }
-/*.hdn{
-  background-color: rgba(255, 255, 255, 0.4);
-}*/
+.hdn{
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
 @media only screen and (min-width: 768px) {
   .cd-intro h1 {
     font-size: 30px;
@@ -425,8 +432,8 @@ html, body {
   z-index: 1;
 }
 .cd-main-content p {
-  line-height: 1.6;
-  margin: 2em 0;
+  line-height: 1.3;
+  margin: 1.7em 0;
 }
 @media only screen and (min-width: 1170px) {
   .cd-main-content p {
@@ -434,6 +441,7 @@ html, body {
     font-size: 1.25rem;
   }
 }
+
 .form-control, .form-control:focus, .input-group-addon {
   border-color: #e1e1e1;
       border-radius: 0;
