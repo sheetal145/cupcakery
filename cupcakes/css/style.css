@@ -367,6 +367,11 @@ html, body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
+ .no-touch .cd-primary-nav a:hover {
+  background-color: #942222 !important;
+  text-decoration: none;
+  color: #ffffff;
+}
   .cd-header.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
@@ -455,6 +460,11 @@ html, body {
   .cd-logo {
     left: 2.6em;
   }
+ .no-touch .cd-primary-nav a:hover {
+  background-color: #942222 !important;
+  text-decoration: none;
+  color: #ffffff;
+}
 }
 
 
@@ -469,5 +479,10 @@ html, body {
 .btn-2{
   background-color: #8b0e0e;
   color:#ffffff;
+}
+.no-touch .cd-primary-nav a:hover {
+  background-color: #942222 !important;
+  text-decoration: none;
+  color: #ffffff;
 }
 
