@@ -7,6 +7,7 @@ Primary style
 html, body{
   scroll-behavior: smooth;
 }
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -82,6 +83,9 @@ html, body {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   left: .875em;
+}
+.cd-intro h1, .jumbotron .container h1,.txxx{
+ font-family: 'Indie Flower', cursive;
 }
 .cd-logo img {
   display: block;
@@ -333,6 +337,9 @@ html, body {
     font-size: 20px;
     font-size: 1.25rem;
   }
+ .cd-intro h1, .jumbotron .container h1,.txxx{
+ font-family: 'Indie Flower', cursive;
+}
  .cd intro h1{
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
@@ -415,9 +422,9 @@ html, body {
     background: transparent;
     box-shadow: none;
   }
-  .txxx{
-    font-family: 'Segoe Script', Tahoma, Geneva, Verdana, sans-serif !important;
-  }
+.cd-intro h1, .jumbotron .container h1,.txxx{
+ font-family: 'Indie Flower', cursive;
+}
 }
 @media only screen and (min-width: 768px) {
   .cd-intro h1 {
