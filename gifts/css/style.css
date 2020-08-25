@@ -257,6 +257,11 @@ html, body {
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+  footer{
+  background-color: #852222;
+  color: #fff;
+}
+
   .cd-primary-nav-trigger .cd-menu-text {
     display: inline-block;
   }
@@ -374,6 +379,11 @@ html, body {
     font-size: 30px;
     font-size: 1.875rem;
   }
+  footer{
+  background-color: #852222;
+  color: #fff;
+}
+
   .cd-primary-nav .cd-label {
     font-size: 16px;
     font-size: 1rem;
