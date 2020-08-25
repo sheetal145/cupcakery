@@ -7,6 +7,7 @@ Primary style
 html, body{
   scroll-behavior: smooth;
 }
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -30,8 +31,8 @@ body.overflow-hidden {
 }
 
 a {
-  color: white;
-  text-decoration: none;
+  color: #ffffff;
+  text-decoration: none!important;
 }
 
 /* -------------------------------- 
@@ -226,6 +227,7 @@ html, body {
   display: inline-block;
   padding: .4em 1em;
   border-radius: 0.25em;
+ text-decoration: none;
   
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
