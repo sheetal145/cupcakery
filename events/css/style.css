@@ -145,6 +145,10 @@ html, body{
     /* hidden on small devices */
     display: none;
   }
+footer{
+  background-color: #531313;
+  color: #ffffff;
+}
   .cd-secondary-nav li {
     display: inline-block;
     margin-left: 2.2em;
