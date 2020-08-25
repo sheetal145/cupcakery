@@ -83,6 +83,10 @@ h1{
 .cd-logo img {
   display: block;
 }
+footer{
+  background-color: #531313;
+  color: #ffffff;
+}
 @media only screen and (min-width: 768px) {
   .cd-logo {
     left: 2.6em;
