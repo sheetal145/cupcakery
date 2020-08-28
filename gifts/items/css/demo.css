@@ -9,7 +9,7 @@
 }
 
 .xop-grid {
-	margin: 20px 0 0 0;
+	margin: 15px 0 0 0;
 	padding: 0;
 	list-style: none;
 	display: block;
@@ -31,7 +31,7 @@
 	width: 328px;
 	height: 328px;
 	display: inline-block;
-	margin: 20px;
+	margin: 15px;
 }
 
 .xop-box {
