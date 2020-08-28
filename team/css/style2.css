@@ -93,34 +93,7 @@ footer{
   }
 }
 
-.cd-secondary-nav {
-  position: absolute;
-  top: 50%;
-  bottom: auto;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 10em;
-  /* hidden on small devices */
-  display: none;
-}
-.cd-secondary-nav li {
-  display: inline-block;
-  margin-left: 2.2em;
-}
-.cd-secondary-nav a {
-  display: inline-block;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-@media only screen and (min-width: 768px) {
-  .cd-secondary-nav {
-    display: block;
-  }
-}
+
 
 .cd-primary-nav-trigger {
   position: absolute;
@@ -397,6 +370,9 @@ footer{
     font-size: 20px;
     font-size: 1.25rem;
   }
+}
+.menu{
+
 }
 .mh-menu li{
 	width: 300px;
