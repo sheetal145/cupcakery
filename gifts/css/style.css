@@ -225,7 +225,7 @@ html, body {
   }
   .cd-primary-nav-trigger .cd-menu-text {
     display: inline-block;
-    font-size: 3em !important;
+    font-size: 1.5em !important;
   }
   .cd-primary-nav-trigger .cd-menu-icon {
     left: auto;
@@ -248,7 +248,7 @@ html, body {
   background: rgba(97, 4, 20, 0.96);
   z-index: 2;
   text-align: center;
-  font-size: 3em;
+  font-size: 1.5em;
   padding: 50px 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
