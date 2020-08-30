@@ -7,14 +7,13 @@ Primary style
 html, body{
     scroll-behavior: smooth;
   }
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
   *, *:after, *:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
   body {
     font-size: 100%;
     font-family: "Source Sans Pro", sans-serif;
@@ -25,7 +24,9 @@ html, body{
     /* when primary navigation is visible, the content in the background won't scroll */
     overflow: hidden;
   }
-  
+  .bg{
+    background-image: url("../images/pattern.jpg");
+  }
   a {
     color: white;
     text-decoration: none;
@@ -112,9 +113,7 @@ html, body{
       background-color: #420a0af5;
     }
   }
-.txt{
-    font-family: 'Caveat', cursive;
-}
+  
   .cd-logo {
     display: block;
     position: absolute;
@@ -131,7 +130,7 @@ html, body{
     display: block;
   }
   @media only screen and (min-width: 768px) {
-    .cd-logo {
+    .cd-logo { 
       left: 2.6em;
     }
   }
@@ -149,10 +148,6 @@ html, body{
     /* hidden on small devices */
     display: none;
   }
-footer{
-  background-color: #531313;
-  color: #ffffff;
-}
   .cd-secondary-nav li {
     display: inline-block;
     margin-left: 2.2em;
@@ -315,7 +310,6 @@ footer{
   .cd-primary-nav a {
     display: inline-block;
     padding: .4em 1em;
-    text-decoration: none;
     border-radius: 0.25em;
     -webkit-transition: background 0.2s;
     -moz-transition: background 0.2s;
@@ -400,7 +394,7 @@ footer{
     width: 100%;
     max-width: 1170px;
     left: 50%;
-    top: 30%;
+    top: 10%;
     bottom: auto;
     right: auto;
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -526,7 +520,7 @@ footer{
     position: absolute;
   }
   .jumbotron{
-    background-color: #5f0d18;
+    background-color: #5f0d18af;
     color: #f0f8ff;
     font-family: 'Segoe Script', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -552,7 +546,14 @@ footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 35%;
 }
-
+.textt{
+font-family: 'Caveat', cursive;
+color: #ffffff;
+font-size: 2em;
+}
+.services-x{
+  margin-left: 15%;
+}
 .img{
   background-position: center;
   background-attachment: fixed;
@@ -560,3 +561,8 @@ footer{
   height: 50%;
   margin-left: 25%;
 }
+footer{
+  background-color: #531313;
+  color: #ffffff;
+}
+
