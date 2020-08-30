@@ -5,13 +5,16 @@ h1{
 	color: #791b1b;
 	font-family: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif !important;
 }
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+/*
 .mh-menu{
 	height: 385px;
 	width: 600px;
 	margin: 20px auto;
 	position: relative;
 
-}
+}*/
 .cd-header {
   position: absolute;
   top: 0;
@@ -83,17 +86,40 @@ h1{
 .cd-logo img {
   display: block;
 }
-footer{
-  background-color: #531313;
-  color: #ffffff;
-}
 @media only screen and (min-width: 768px) {
   .cd-logo {
     left: 2.6em;
   }
 }
 
-
+.cd-secondary-nav {
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 10em;
+  /* hidden on small devices */
+  display: none;
+}
+.cd-secondary-nav li {
+  display: inline-block;
+  margin-left: 2.2em;
+}
+.cd-secondary-nav a {
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media only screen and (min-width: 768px) {
+  .cd-secondary-nav {
+    display: block;
+  }
+}
 
 .cd-primary-nav-trigger {
   position: absolute;
@@ -370,8 +396,7 @@ footer{
     font-size: 20px;
     font-size: 1.25rem;
   }
-}
-
+}/*
 .mh-menu li{
 	width: 300px;
 }
@@ -380,7 +405,7 @@ footer{
 	width: 280px;
 	padding: 0px 10px;
 	text-decoration: none;
-	/*9977200503 research*/
+	/*9977200503 research/
 	text-align: right;
 	position: relative;
 	z-index: 10;
@@ -444,4 +469,75 @@ footer{
 .mh-menu li:hover img{
 	left: 300px;
 	opacity: 1;
+}
+*/
+html {
+  box-sizing: border-box;
+}
+.bggg{
+  background-image: url("../images/bg.jpg");
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-left: 2%;
+  margin-right: 1%;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(165, 44, 44);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(105, 21, 21);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: rgb(192, 61, 61);
+}
+footer{
+  background-color: #531313;
+  color: #ffffff;
+}
+.card .text{
+  font-family: 'Caveat', cursive;
+}
+.text p{
+  font-size: 2em;
 }
