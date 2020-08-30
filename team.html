@@ -14,65 +14,100 @@
 		<link href='http://fonts.googleapis.com/css?family=Alegreya+SC:700,400italic' rel='stylesheet' type='text/css' />
     </head>
     <body>
-        <header class="cd-header">
-            <div class="cd-logo"><a href="index.html"><img src="img/muffin.png" alt="Logo"></a></div>
-    
-            <a class="cd-primary-nav-trigger" href="#0">
-                <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
-            </a> <!-- cd-primary-nav-trigger -->
-        </header>
-    
-        <nav>
-            <ul class="cd-primary-nav">
-                <li class="cd-label">Menu</li>
-    
-                <li><a href="cupcakes.html">Cupcakes</a></li>
-                <li><a href="sweets.html">Sweet Treats</a></li>
-                <li><a href="gifts.html">Gifts</a></li>
-    
-                <li class="cd-label">About Us</li>
-    
-                <li><a href="events.html">Catering & Events</a></li>
-                <li><a href="team.html">The Team</a></li>
-                <li><a href="about.html">Our Story</a></li>
-    
-                <li class="cd-label">Follow us</li>
-                
-                <li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
-                <li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
-                <li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li>
-                <li class="cd-social cd-twitter"><a href="#0">Twitter</a></li>
-            </ul>
-        </nav>
-    
+	    	<header class="cd-header">
+		<div class="cd-logo"><a href="index.html"><img src="img/muffin.png" alt="Logo"></a></div>
+
+		<nav>
+			<ul class="cd-secondary-nav">
+				<li><a href="" data-toggle="modal" data-target="#modalLRForm">Register</a></li>
+			</ul>
+		</nav> <!-- cd-nav -->
+
+		<a class="cd-primary-nav-trigger" href="#0">
+			<span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+		</a> <!-- cd-primary-nav-trigger -->
+	</header>
+
+	<nav>
+		<ul class="cd-primary-nav">
+			<li class="cd-label">Menu</li>
+
+			<li><a href="cupcakes.html">Cupcakes</a></li>
+			<li><a href="sweets.html">Sweet Treats</a></li>
+			<li><a href="gifts.html">Gifts</a></li>
+
+			<li class="cd-label">About Us</li>
+
+			<li><a href="events.html">Catering & Events</a></li>
+			<li><a href="team.html">The Team</a></li>
+			<li><a href="about.html">Our Story</a></li>
+
+			<li class="cd-label">Follow us</li>
+			
+			<li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
+			<li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
+			<li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li>
+			<li class="cd-social cd-twitter"><a href="#0">Twitter</a></li>
+    </ul>
+	    </nav>
+	        <section class="bggg">
         <section class="cd-intro img-responsive">
             <h1><span class="hdn">-Our Team-</span></h1>
         </section>
         <br>
-	<div class="row">
-		  <div class="col-xs-6 col-md-4">
-
-        <div class="menu img img-responsive">
-		<ul class="mh-menu">
-            <li><a href="#"><span>Art Director</span> <span>Henry James</span></a><img src="team/images/1.jpg" alt="image01" class="img img-responsive"/></li>				
-            <li><a href="#"><span>Production Coordinator</span> <span>Francis Morgan</span></a><img src="team/images/2.jpg" alt="image02" class="img img-responsive"/></li>
-			<li><a href="#"><span>Sound</span> <span>Kevin Schneider</span></a><img src="team/images/3.jpg" alt="image03" class="img img-responsive"/></li>
-        <li><a href="#"><span>Casting</span> <span>Benjamin Zakalis</span></a><img src="team/images/4.jpg" alt="image04" class="img img-responsive"/></li>	
-		</ul></div></div>
-	    </div>
-	<footer class="page-footer font-small">
+	    <div class="row">
+        <div class="column">
+          <div class="card card1">
+            <img src="team/images/chef3.jpg" alt="Jane" style="width:100%">
+            <div class="container text">
+              <h2 class="display-4">Jane Doe</h2><br>
+              <p class="title">Baker</p><br>
+              <p>Jane123@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="team/images/chef1.jpg" alt="Mike" style="width:100%">
+            <div class="container text">
+              <h2 class="display-4">Mike Ross</h2><br>
+              <p class="title">Pastry Chef</p><br>
+              <p>Mike456@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card card3">
+            <img src="team/images/chef2.jpg" alt="John" style="width:100%">
+            <div class="container text">
+              <h2 class="display-4">John Doe</h2><br>
+              <p class="title">Cake Designer</p>
+              <!--<p></p>--><br>
+              <p>john789@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="page-footer font-small">
 
 		<!-- Copyright -->
-		<div class="footer-copyright text-center py-3">© 2020 Copyright:
-		  <a href="#">Cupcakery Co.</a>
+		<div class="footer-copyright text-center white py-3">© 2020 Copyright:
+		  <a href="#" style="text-decoration: none; color: #ffffff;">Cupcakery Co.</a>
 		</div>
 		<!-- Copyright -->
 	  
 	  </footer>
+</section>
+
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    <script src="js/jquery-2.1.1.js"></script>
-<script src="js/main.js"></script> <!-- Resource jquery -->
+<script src="js/main.js"></script> <!-- Resource jQuery -->
     </body>
 </html>
