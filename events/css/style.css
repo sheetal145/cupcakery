@@ -8,6 +8,7 @@ html, body{
     scroll-behavior: smooth;
   }
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
   *, *:after, *:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -412,7 +413,7 @@ footer{
     font-size: 3em !important;
     font-weight: bolder;
     text-align: center;
-    font-family: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Monoton', cursive;
   }
 
   @media only screen and (min-width: 768px) {
