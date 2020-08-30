@@ -212,6 +212,7 @@ html, body {
   -webkit-transition-property: -webkit-transform;
   -moz-transition-property: -moz-transform;
   transition-property: transform;
+ text-decoration: none;
   -webkit-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
   transition-duration: 0.4s;
@@ -312,7 +313,7 @@ html, body {
   font-size: 3em !important;
   font-weight: bolder;
   text-align: center;
- font-family: 'Monoton', cursive;
+ font-family: 'Monoton', cursive !important;
 }
 .hdn{
   background-color: rgba(0, 0, 0, 0.3);
