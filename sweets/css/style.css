@@ -12,7 +12,7 @@ html, body{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 body {
   font-size: 100%;
   font-family: "Source Sans Pro", sans-serif;
@@ -408,7 +408,7 @@ html, body {
   font-size: 3em !important;
   font-weight: bolder;
   text-align: center;
-  font-family: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Monoton', cursive;
 }
 .hdn{
   background-color: rgba(104, 48, 48, 0.5);
