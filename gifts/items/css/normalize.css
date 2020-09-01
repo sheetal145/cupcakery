@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css*/
 button,hr,input{
     overflow:visible
@@ -12,7 +13,7 @@ progress,sub,sup{
     box-sizing:border-box;padding:0
 }
 html{
-    font-family:sans-serif;
+    font-family: 'Caveat', cursive;
     line-height:1.15;
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%
@@ -34,7 +35,7 @@ hr{
     box-sizing:content-box;height:0
 }
 code,kbd,pre,samp{
-    font-family:monospace,monospace;font-size:1em
+    font-family: 'Caveat', cursive;font-size:1em;
 }
 a{
     background-color:transparent;-webkit-text-decoration-skip:objects
