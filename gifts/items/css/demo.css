@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 .xxop{
   background-image: url("../images/bg.jpg");
 }
@@ -137,8 +137,8 @@
 }
 
 .xop-info h3 {
-    font-family: 'Pacifico', cursive;
-  color: #fff;
+	font-family: 'Caveat', cursive;
+  	color: #fff;
 	font-size: 35px;
 	margin: 0 30px;
 	padding: 100px 0 0 0;
@@ -146,7 +146,7 @@
 }
 
 .xop-info button {
-    font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Caveat', cursive;
 	color: #fff;
 	margin: 0 30px;
 	font-size: 18px;
