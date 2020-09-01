@@ -1,14 +1,17 @@
 /* -------------------------------- 
 
 Primary style
-
+ 
 
 -------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+
 html, body{
   scroll-behavior: smooth;
 }
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -25,10 +28,15 @@ body.overflow-hidden {
   /* when primary navigation is visible, the content in the background won't scroll */
   overflow: hidden;
 }
+.no-touch .cd-primary-nav a:hover {
+  background-color: #942222 !important;
+  text-decoration: none !important;
+  color: #ffffff;
+}
 
 a {
-  color: white;
-  text-decoration: none;
+  color: #ffffff !important;
+  text-decoration: none!important;
 }
 
 /* -------------------------------- 
@@ -56,63 +64,18 @@ Main components
 html, body {
   height: 100%;
 }
-
 .cd-header {
   position: absolute;
   top: 0;
   left: 0;
-  background: #4d0710f2;
+  background: transparent;
   height: 50px;
   width: 100%;
   z-index: 3;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media only screen and (min-width: 768px) {
-  .cd-header {
-    height: 80px;
-    background: transparent;
-    box-shadow: none;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-header {
-    -webkit-transition: background-color 0.3s;
-    -moz-transition: background-color 0.3s;
-    transition: background-color 0.3s;
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .cd-header.is-fixed {
-    /* when the user scrolls down, we hide the header right above the viewport */
-    position: fixed;
-    top: -80px;
-    background-color: #4e0310f5;
-    -webkit-transition: -webkit-transform 0.3s;
-    -moz-transition: -moz-transform 0.3s;
-    transition: transform 0.3s;
-  }
-  .cd-header.is-visible {
-    /* if the user changes the scrolling direction, we show the header */
-    -webkit-transform: translate3d(0, 100%, 0);
-    -moz-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-  .cd-header.menu-is-open {
-    /* add a background color to the header when the navigation is open */
-    background-color: #420a0af5;
-  }
-}
-
 .cd-logo {
   display: block;
   position: absolute;
@@ -127,11 +90,6 @@ html, body {
 }
 .cd-logo img {
   display: block;
-}
-@media only screen and (min-width: 768px) {
-  .cd-logo {
-    left: 2.6em;
-  }
 }
 
 .cd-primary-nav-trigger {
@@ -209,37 +167,6 @@ html, body {
   -o-transform: rotate(225deg);
   transform: rotate(225deg);
 }
-@media only screen and (min-width: 768px) {
-  .cd-primary-nav-trigger {
-    width: 100px;
-    padding-left: 1em;
-    background-color: transparent;
-    height: 30px;
-    line-height: 30px;
-    right: 2.2em;
-    top: 50%;
-    bottom: auto;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  .cd-primary-nav-trigger .cd-menu-text {
-    display: inline-block;
-    font-size: 1.5em !important;
-  }
-  .cd-primary-nav-trigger .cd-menu-icon {
-    left: auto;
-    right: 1em;
-    -webkit-transform: translateX(0) translateY(-50%);
-    -moz-transform: translateX(0) translateY(-50%);
-    -ms-transform: translateX(0) translateY(-50%);
-    -o-transform: translateX(0) translateY(-50%);
-    transform: translateX(0) translateY(-50%);
-  }
-}
-
 .cd-primary-nav {
   /* by default it's hidden - on top of the viewport */
   position: fixed;
@@ -250,7 +177,6 @@ html, body {
   background: rgba(97, 4, 20, 0.96);
   z-index: 2;
   text-align: center;
-  font-size: 2em !important;
   padding: 50px 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -265,6 +191,7 @@ html, body {
   -webkit-transition-property: -webkit-transform;
   -moz-transition-property: -moz-transform;
   transition-property: transform;
+ text-decoration: none;
   -webkit-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
   transition-duration: 0.4s;
@@ -282,6 +209,9 @@ html, body {
   display: inline-block;
   padding: .4em 1em;
   border-radius: 0.25em;
+ text-decoration: none;
+ color: #ffffff;
+  
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
   transition: background 0.2s;
@@ -289,7 +219,7 @@ html, body {
 .no-touch .cd-primary-nav a:hover {
   background-color: #942222 !important;
   text-decoration: none;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .cd-primary-nav .cd-label {
   color: #e9b525;
@@ -334,22 +264,6 @@ html, body {
   -o-transform: translateY(0);
   transform: translateY(0);
 }
-@media only screen and (min-width: 768px) {
-  .cd-primary-nav {
-    padding: 80px 0;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-primary-nav li {
-    font-size: 30px;
-    font-size: 1.875rem;
-  }
-  .cd-primary-nav .cd-label {
-    font-size: 16px;
-    font-size: 1rem;
-  }
-}
-
 .cd-intro {
   position: relative;
   height: 100% !important;
@@ -374,28 +288,16 @@ html, body {
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   color: white;
-  font-size: 60px !important;
+  font-size: 40px;
   font-size: 3em !important;
   font-weight: bolder;
   text-align: center;
-  font-family: 'Monoton', cursive;
+ font-family: 'Monoton', cursive !important;
 }
 .hdn{
   background-color: rgba(0, 0, 0, 0.3);
 
 }
-@media only screen and (min-width: 768px) {
-  .cd-intro h1 {
-    font-size: 30px;
-    font-size: 1.875rem;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-intro {
-    height: 700px;
-  }
-}
-
 .cd-main-content {
   position: relative;
   z-index: 1;
@@ -404,15 +306,130 @@ html, body {
   line-height: 1.3;
   margin: 1.7em 0;
 }
+
+
+
+
+
+
+
 @media only screen and (min-width: 1170px) {
   .cd-main-content p {
     font-size: 20px;
     font-size: 1.25rem;
   }
+  .cd-intro {
+    height: 700px;
+  }
+ .no-touch .cd-primary-nav a:hover {
+  background-color: #942222 !important;
+  text-decoration: none;
+  color: #ffffff !important;
+}
+ .cd-primary-nav li {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+  .cd-primary-nav .cd-label {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+.cd-header {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .cd-header.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -80px;
+    background-color: #4e0310f5;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+  .cd-header.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  .cd-header.menu-is-open {
+    /* add a background color to the header when the navigation is open */
+    background-color: #420a0af5;
+  }
 }
 
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+  .cd-header {
+    height: 80px;
+    background: transparent;
+    box-shadow: none;
+  }
+  .cd-intro h1 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+  .cd-primary-nav {
+    padding: 80px 0;
+  }
+  .cd-primary-nav-trigger {
+    width: 100px;
+    padding-left: 1em;
+    background-color: transparent;
+    height: 30px;
+    line-height: 30px;
+    right: 2.2em;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .cd-primary-nav-trigger .cd-menu-text {
+    display: inline-block;
+  }
+ .no-touch .cd-primary-nav a:hover {
+  background-color: #942222 !important;
+  text-decoration: none;
+  color: #ffffff !important;
+}
+  .cd-primary-nav-trigger .cd-menu-icon {
+    left: auto;
+    right: 1em;
+    -webkit-transform: translateX(0) translateY(-50%);
+    -moz-transform: translateX(0) translateY(-50%);
+    -ms-transform: translateX(0) translateY(-50%);
+    -o-transform: translateX(0) translateY(-50%);
+    transform: translateX(0) translateY(-50%);
+  }
+  .cd-secondary-nav {
+    display: block;
+  }
+  .cd-logo {
+    left: 2.6em;
+  }
+}
 footer{
   background-color: #531313;
   color: #ffffff;
-  font-size: 1em;
 }
+
